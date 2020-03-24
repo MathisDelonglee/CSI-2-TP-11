@@ -2,17 +2,19 @@ class circle:
     def __init__(self, rayon):
         self.__rayon = rayon
 
-    def getRadius(self):
+    def getRayon(self):
         return self.__rayon
 
     def __add__(self, c):
        return circle(self.__rayon + c.__rayon)
 
-    def __gt__(self, c):
-       return self.__rayon < c.__rayon
+    def __lt__(self, c):
+        return self.__rayon < c.__rayon
 
-    def __it__(self, c):
+    def __gt__(self, c):
        return self.__rayon > c.__rayon
+
+
 
 
 
@@ -23,7 +25,7 @@ if __name__=='__main__':
     c4 = c1 < c2
     c5 = c2 > c3
 
-    print(c3.getRadius())
+    print(c3.getRayon())
     print("Instance :", isinstance(c3,circle))
     print("**********")
     print(c4)
