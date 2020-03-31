@@ -38,4 +38,8 @@ if __name__ == '__main__':
     C4 = abs(C1)
     print(C4)
     C5 = abs(C2)
-    print("la valeur absolue de "+str(C5.getRe())+"+"+str(C5.getIm())+"i est de :"+C5)
+    print(C5)
+    C6 = C1==C2
+    print(C6)
+    C7 = C1!=C2
+    print(C7)
